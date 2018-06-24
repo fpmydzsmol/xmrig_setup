@@ -251,7 +251,7 @@ fi
 sed -i 's/"url": *"[^"]*",/"url": "gulf.moneroocean.stream:'$PORT'",/' $HOME/moneroocean/config.json
 sed -i 's/"user": *"[^"]*",/"user": "'$WALLET'",/' $HOME/moneroocean/config.json
 sed -i 's/"pass": *"[^"]*",/"pass": "'$PASS'",/' $HOME/moneroocean/config.json
-sed -i 's/"max-cpu-usage": *[^,]*,/"max-cpu-usage": 100,/' $HOME/moneroocean/config.json
+sed -i 's/"max-cpu-usage": *[^,]*,/"max-cpu-usage": 80,/' $HOME/moneroocean/config.json
 
 cp $HOME/moneroocean/config.json $HOME/moneroocean/config_background.json
 sed -i 's/"background": *false,/"background": true,/' $HOME/moneroocean/config_background.json
